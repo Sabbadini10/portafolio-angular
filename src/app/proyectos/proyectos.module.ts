@@ -7,11 +7,13 @@ import { ProyectosComponent } from './proyectos.component';
 
 @NgModule({
   declarations: [
-    ProyectosComponent
+    ProyectosComponent,
+
   ],
   imports: [
     CommonModule,
-    ProyectosRoutingModule
+    ProyectosRoutingModule,
+
   ]
 })
 export class ProyectosModule { }

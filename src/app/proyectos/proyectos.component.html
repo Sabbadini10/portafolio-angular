@@ -1,1 +1,15 @@
-<p>proyectos works!</p>
+<div class="row">
+  <div *ngFor="let proyecto of data" class="col-12 col-md-4">
+    <div class="card my-3">
+      <div class="card2">
+        <h2 class="text-white">{{proyecto.nombre}}</h2>
+        <img class="proyecto-imagen p-1" [src]="proyecto.img" [alt]="proyecto.nombre"/>
+        <div class="d-flex flex-column p-3">
+          <a target="_blank" [href]="proyecto.url" class="btn btn-info my-1">Visitar Aplicacion</a>
+          <a target="_blank" [href]="proyecto.url" class="btn btn-success my-3">Mas detalles</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
