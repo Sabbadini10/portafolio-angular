@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProyectosdataService } from './proyectosdata.service';
+import { ProyectosdataService } from './services/proyectosdata.service';
 
 @Component({
   selector: 'app-proyectos',
@@ -11,5 +11,9 @@ constructor(private proyectoDataService: ProyectosdataService){}
 
 get data(){
   return this.proyectoDataService.data
+}
+
+getUri(nombre: string){
+  return encodeURI(nombre);
 }
 }

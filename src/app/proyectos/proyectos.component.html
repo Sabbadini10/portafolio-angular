@@ -6,7 +6,7 @@
         <img class="proyecto-imagen p-1" [src]="proyecto.img" [alt]="proyecto.nombre"/>
         <div class="d-flex flex-column p-3">
           <a target="_blank" [href]="proyecto.url" class="btn btn-info my-1">Visitar Aplicacion</a>
-          <a target="_blank" [href]="proyecto.url" class="btn btn-success my-3">Mas detalles</a>
+          <a [routerLink]='"informacion/" + getUri(proyecto.nombre)' routerLinkActive="router-link-active"  class="btn btn-success my-3">Mas detalles</a>
         </div>
 
       </div>
